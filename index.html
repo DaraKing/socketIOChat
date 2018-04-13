@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Connected</title>
+</head>
+<body>
+    <div id="login">
+    <input type="text" id="login_input" placeholder="Unesite vaše ime" />
+    </div>
+    <div id="dario-chat" class="hidden">
+    <div id="chat-window">
+    <div id="online-list"><p class="header">Online users: </p><br/><p id="users"></p></div>
+    <div id="output"></div>
+    <div id="feedback"></div>
+    </div>
+    <input id="message" type="text" placeholder="Unesi poruku" />
+    <button id="send">Pošalji</button>
+    </div>
+
+  <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
